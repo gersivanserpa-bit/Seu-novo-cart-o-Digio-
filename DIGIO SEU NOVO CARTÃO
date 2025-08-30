@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seu novo Cartão Digio – Sem anuidade e cashback</title>
+  <meta name="description" content="Peça seu Cartão Digio com zero anuidade, descontos, cashbacks e conta 100% digital. Clique e peça o seu agora." />
+  <meta property="og:title" content="Seu novo Cartão Digio chegou!" />
+  <meta property="og:description" content="Descontos, cashbacks e conta 100% digital. Clique e peça o seu!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1523285367489-d38aec03b7f1?q=80&w=1200&auto=format&fit=crop" />
+  <meta name="theme-color" content="#14213D" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#14213D; /* Azul escuro Digio */
+      --primary-2:#1e40af; /* Azul secundário */
+      --accent:#FCA311; /* Amarelo destaque */
+      --text:#1f2937;--bg:#f5f7fa;--card:#ffffff
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header.hero{background:linear-gradient(135deg,var(--primary),var(--primary-2));color:#fff}
+    .hero-inner{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:56px 0}
+    .hero h1{font-size:clamp(28px,5vw,44px);margin:0 0 10px;font-weight:800;letter-spacing:-.02em}
+    .hero p{font-size:clamp(16px,2.5vw,20px);margin:0 0 22px;color:#eef4ff}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{appearance:none;border:0;border-radius:999px;padding:14px 22px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:all .25s}
+    .btn-primary{background:var(--accent);color:#14213D}
+    .btn-primary:hover{filter:brightness(0.9)}
+    .btn-outline{background:transparent;border:2px solid #ffffffaa;color:#fff}
+    .btn-outline:hover{background:#ffffff14}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:34px 0}
+    .card{background:var(--card);border-radius:16px;padding:18px 18px 16px;box-shadow:0 8px 20px rgba(2,44,106,.08);transition:transform .18s ease, box-shadow .18s ease}
+    .card:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(2,44,106,.12)}
+    .card h3{margin:6px 0 8px;font-size:18px;color:var(--primary)}
+    .card p{margin:0;color:#4b5563}
+    .section{padding:28px 0}
+    .center{text-align:center}
+    .badge{display:inline-block;background:#e9f2ff;color:var(--primary);padding:8px 12px;border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+    .disclaimer{font-size:12px;color:#6b7280;margin-top:12px}
+    footer{background:#0f2d66;color:#dbe7ff;padding:18px;text-align:center}
+    @media (max-width:900px){.hero-inner{grid-template-columns:1fr} .hero-illus{order:-1}}
+    .illus{width:100%;border-radius:16px;box-shadow:0 14px 28px rgba(0,0,0,.2)}
+    /* contador */
+    .countdown{font-size:22px;font-weight:700;color:var(--accent);margin-top:20px}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container hero-inner">
+      <div>
+        <div class="badge">Convite especial</div>
+        <h1>Eu já sou Digio, agora é a sua vez!</h1>
+        <p>Tenha um cartão de crédito com descontos, cashbacks e conta 100% digital. Peça o seu e controle sua vida financeira pelo app.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://mgm.digio.com.br/bc50/99lb9m2s" target="_blank" rel="noopener">👉 Quero meu Digio agora</a>
+          <a class="btn btn-outline" id="shareBtn" href="#">Compartilhar no WhatsApp</a>
+        </div>
+        <div class="countdown" id="countdown"></div>
+        <div class="disclaimer">Sem anuidade e com muitas vantagens. Sujeito à análise e às políticas do emissor.</div>
+      </div>
+      <div class="hero-illus">
+        <img class="illus" alt="Cartão e app Digio sobre um fundo azul" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1200&auto=format&fit=crop" />
+      </div>
+    </div>
+  </header>  <main class="container">
+    <section class="section center">
+      <h2 style="margin:8px 0 4px">Vantagens do Cartão Digio</h2>
+      <p style="margin:0;color:#6b7280">Tudo o que você precisa para simplificar seu dia a dia financeiro.</p>
+    </section><section class="card-grid">
+  <article class="card">
+    <h3>✅ Sem anuidade</h3>
+    <p>Você não paga nada para ter e usar seu cartão.</p>
+  </article>
+  <article class="card">
+    <h3>💰 Cashback</h3>
+    <p>Parte do que você gasta volta para a sua conta.</p>
+  </article>
+  <article class="card">
+    <h3>📱 100% digital</h3>
+    <p>Solicite, acompanhe e gerencie tudo pelo app.</p>
+  </article>
+  <article class="card">
+    <h3>🌎 Internacional</h3>
+    <p>Aceito no Brasil e no mundo, online e presencial.</p>
+  </article>
+  <article class="card">
+    <h3>🧾 Parcelamento de boletos</h3>
+    <p>Mais flexibilidade para organizar as despesas.</p>
+  </article>
+  <article class="card">
+    <h3>🛡️ Segurança</h3>
+    <p>Tecnologia de proteção em compras online e físicas.</p>
+  </article>
+  <article class="card">
+    <h3>🎁 Benefícios Visa</h3>
+    <p>Descontos, ofertas e vantagens da bandeira.</p>
+  </article>
+</section>
+
+<section class="section center">
+  <a class="btn btn-primary" href="https://mgm.digio.com.br/bc50/99lb9m2s" target="_blank" rel="noopener">Pedir meu Digio agora</a>
+  <div class="disclaimer">Ao clicar, você será direcionado para o site oficial do Digio para concluir a solicitação.</div>
+</section>
+
+  </main>  <footer>
+    <small>Seu novo cartão de crédito, simples, digital e cheio de vantagens.</small>
+  </footer>  <script>
+    // Compartilhar no WhatsApp com o seu link de indicação
+    const shareBtn = document.getElementById('shareBtn');
+    if(shareBtn){
+      const url = 'https://mgm.digio.com.br/bc50/99lb9m2s';
+      const msg = encodeURIComponent('Eu já sou Digio, agora é a sua vez! Peça o seu com descontos, cashbacks e conta 100% digital: ' + url);
+      shareBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        const wa = `https://wa.me/?text=${msg}`;
+        window.open(wa, '_blank');
+      });
+    }
+
+    // Contador regressivo para incentivo
+    function startCountdown(endDate){
+      const countdownEl = document.getElementById('countdown');
+      function update(){
+        const now = new Date().getTime();
+        const distance = endDate - now;
+        if(distance <= 0){
+          countdownEl.innerHTML = "Oferta por tempo limitado encerrada!";
+          return;
+        }
+        const days = Math.floor(distance/(1000*60*60*24));
+        const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+        const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+        const seconds = Math.floor((distance%(1000*60))/1000);
+        countdownEl.innerHTML = `⏳ Oferta especial acaba em ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }
+      setInterval(update,1000);
+      update();
+    }
+    const endDate = new Date();
+    endDate.setDate(endDate.getDate() + 7); // 7 dias de prazo
+    startCountdown(endDate);
+  </script></body>
+</html>
